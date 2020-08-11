@@ -269,7 +269,11 @@ export class _Blank extends React.Component {
                 Press me!
               </Button>
               <Image
-                resizeMode="cover"
+                resizeMode="contain"
+                source={{
+                  uri:
+                    "https://d3nfddh2sbo9hk.cloudfront.net/media/project_component_resources/7_EDnsDpR.jpg"
+                }}
                 style={{
                   width: "100%",
                   height: 200,
@@ -286,12 +290,8 @@ export class _Blank extends React.Component {
                   verticalAlign: "baseline",
                   borderColor: "#000000",
                   borderStyle: "solid",
-                  borderWidth: 0,
-                  borderLeftWidth: 0,
-                  borderRightWidth: 0,
-                  borderTopWidth: 0,
-                  borderBottomWidth: 0,
-                  borderRadius: 0
+                  borderWidth: 2,
+                  borderRadius: 19
                 }}
               />
             </View>
