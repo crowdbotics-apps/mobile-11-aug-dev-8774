@@ -7,7 +7,7 @@ from django.db import models
 
 
 class CustomText(models.Model):
-    title1234 = models.CharField(max_length=150, blank=True,)
+    title1234 = models.CharField(blank=True, max_length=150,)
 
     def __str__(self):
         return self.title

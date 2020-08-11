@@ -6,17 +6,14 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0002_load_initial_data'),
+        ("home", "0002_load_initial_data"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='customtext',
-            name='title',
-        ),
+        migrations.RemoveField(model_name="customtext", name="title",),
         migrations.AddField(
-            model_name='customtext',
-            name='title1234',
+            model_name="customtext",
+            name="title1234",
             field=models.CharField(blank=True, max_length=150),
         ),
     ]
