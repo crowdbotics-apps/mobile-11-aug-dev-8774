@@ -15,6 +15,24 @@ function api_v1_customtext_update(requestBody) {
 function api_v1_customtext_partial_update(requestBody) {
   return mobile11augAPI.patch(`/api/v1/customtext/{id}/`, requestBody)
 }
+function api_v1_hfkhfjfhk_list() {
+  return mobile11augAPI.get(`/api/v1/hfkhfjfhk/`)
+}
+function api_v1_hfkhfjfhk_create(requestBody) {
+  return mobile11augAPI.post(`/api/v1/hfkhfjfhk/`, requestBody)
+}
+function api_v1_hfkhfjfhk_read() {
+  return mobile11augAPI.get(`/api/v1/hfkhfjfhk/{id}/`)
+}
+function api_v1_hfkhfjfhk_update(requestBody) {
+  return mobile11augAPI.put(`/api/v1/hfkhfjfhk/{id}/`, requestBody)
+}
+function api_v1_hfkhfjfhk_partial_update(requestBody) {
+  return mobile11augAPI.patch(`/api/v1/hfkhfjfhk/{id}/`, requestBody)
+}
+function api_v1_hfkhfjfhk_delete() {
+  return mobile11augAPI.delete(`/api/v1/hfkhfjfhk/{id}/`)
+}
 function api_v1_homepage_list() {
   return mobile11augAPI.get(`/api/v1/homepage/`)
 }
@@ -74,6 +92,12 @@ export const apiService = {
   api_v1_customtext_read,
   api_v1_customtext_update,
   api_v1_customtext_partial_update,
+  api_v1_hfkhfjfhk_list,
+  api_v1_hfkhfjfhk_create,
+  api_v1_hfkhfjfhk_read,
+  api_v1_hfkhfjfhk_update,
+  api_v1_hfkhfjfhk_partial_update,
+  api_v1_hfkhfjfhk_delete,
   api_v1_homepage_list,
   api_v1_homepage_read,
   api_v1_homepage_update,
